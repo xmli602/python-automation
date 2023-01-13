@@ -2,17 +2,14 @@
 # Author:xmLi
 
 # fixture基础
-import json
 
+import json
 import pytest
 import requests
 from TEST.Pytest import read_data
 import json
 
 test_data = read_data.readJson()
-# print(type(test_data))
-
-
 # @pytest.fixture()
 # def data():
 # 	return 'hello'
