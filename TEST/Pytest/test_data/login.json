@@ -1,0 +1,18 @@
+{
+  "item": [
+    {
+      "request": {
+        "url": "https://www.cqrc.net/account/user/login",
+        "body": {
+          "account": "13996365087",
+          "password": "123456",
+          "loginWay": 0
+        }
+      },
+      "response":{
+        "code":508,
+        "data":"",
+        "message":"密码错误"}
+    }
+  ]
+}
