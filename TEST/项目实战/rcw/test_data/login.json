@@ -19,12 +19,12 @@
         "url": "http://192.168.18.167:201/backend/system/user/saveUser",
         "body": {
           "deptId":"1439791207755497479",
-          "name":"autotester-01",
+          "name":"autotester-04",
           "post":"运营人员-自动化",
           "roleIdList":["1443147634252226560"],
           "extId":"",
-          "telephone":"18888888802",
-          "email":"18888888802@123.com"}
+          "telephone":"18888888804",
+          "email":"18888888804@123.com"}
       }
     }
   ]

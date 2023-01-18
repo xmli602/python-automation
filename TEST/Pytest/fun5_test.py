@@ -3,11 +3,9 @@
 
 # fixture基础-返回值：测试用例和测试用例之间是传递参数和数据
 
-import json
 import pytest
 import requests
 from TEST.Pytest import read_data
-import json
 
 test_data = read_data.readJson()
 # @pytest.fixture()
@@ -17,19 +15,13 @@ test_data = read_data.readJson()
 # def test_data(data):    # 形式参数就是data这个方法
 # 	assert data == 'hello'
 
-# 实例获取token作为参数
-@pytest.fixture()
-def getToken():
-	'''获取token'''
-	r = requests.post(url=test_data['item'][0]['request']['url'],json=test_data['item'][0]['request']['body'])
-	token = r.json()['data']['accessToken']
-	return token
 
-def test_get_name(getToken):
-	'''获取用户名称'''
+# 引用conftest文件中被fixture装饰的获取token的方法
+def test_get_name(getToken_BC):
+	'''获取BC端用户名称'''
 	# print(getToken)
 	r = requests.get(url='https://www.cqrc.net/account/user/baseInfo',
-	                 headers={'authorization':'bearer {0}'.format(getToken)})
+	                 headers={'authorization':'bearer {0}'.format(getToken_BC)})
 	print(r.json()['data']['name'])
 
 # getToken()

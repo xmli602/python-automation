@@ -1,6 +1,7 @@
 # -*-coding:utf-8 -*-
 # Author:xmLi
 
+# fixture pymql实例演示
 import pymysql
 import pytest
 
