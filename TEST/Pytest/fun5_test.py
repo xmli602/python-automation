@@ -1,7 +1,7 @@
 # -*-coding:utf-8 -*-
 # Author:xmLi
 
-# fixture基础
+# fixture基础-返回值：测试用例和测试用例之间是传递参数和数据
 
 import json
 import pytest
