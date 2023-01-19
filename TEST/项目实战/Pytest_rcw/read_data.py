@@ -11,7 +11,7 @@ folder = os.path.dirname(basepath) # 当前文件的文件夹
 
 def readJson():
 	'''读取json文件'''
-	return json.load(open(folder+'\test_data\login_data.json', 'r', encoding='utf-8')) # 读取json文件，数据类型为dic
+	return json.load(open(folder+'/test_data/login_data.json', 'r', encoding='utf-8')) # 读取json文件，数据类型为dic
 	# return json.load(open('test_data\login_data.json','r',encoding='utf-8'))['item'] # 读取json文件下的列表，类型为list
 
 def readYaml():

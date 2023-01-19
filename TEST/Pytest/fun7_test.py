@@ -26,10 +26,13 @@ def init(connSQL):
 
 def test_getUser(init,connSQL,cursorCre):
 	cursor = connSQL.cursor()
-	sql = "select * from admin_user where telephone = 18888888881"
-	cursorCre.execute(sql)
-	result = cursorCre.fetchall()
-	print(result)
+	sql = [{'sql':"select * from admin_user where telephone = {0}".format(18888888881)},{'sql':"select * from admin_user where telephone = {0}".format(15730332499)}]
+	for i in sql:
+		# print(i['sql'])
+		cursorCre.execute(i['sql'])
+		result = cursorCre.fetchall()
+		print(result)
+
 
 if __name__ == '__main__':
     pytest.main(["-s","-v",'fun7_test.py'])

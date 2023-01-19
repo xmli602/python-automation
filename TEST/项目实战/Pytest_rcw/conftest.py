@@ -24,6 +24,15 @@ def connSQL():
 # @pytest.fixture()
 # def connClose(connSQL):
 # 	connSQL.close()
+# @pytest.fixture()
+# def connClose(connSQL,test_getUser,cursorCre):
+# 	'''清理测试数据，并关闭数据库链接'''
+# 	sql_dels = [{'sql':'DELETE from admin_user_role where staff_id ={0}'.format(test_getUser)},{'sql':'DELETE from admin_user where id ={0}'.format(test_getUser)}]
+# 	for sql in sql_dels:
+# 		cursorCre.execute(sql)
+# 		result = cursorCre.fetchall()
+# 		print('\n执行结果\n',result)
+# 	connSQL.close()
 
 @pytest.fixture()
 def cursorCre(connSQL):
