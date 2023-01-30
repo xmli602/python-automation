@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/apiFrame/.idea/apiFrame.iml" filepath="$PROJECT_DIR$/apiFrame/.idea/apiFrame.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/自动化学习.iml" filepath="$PROJECT_DIR$/.idea/自动化学习.iml" />
     </modules>
   </component>

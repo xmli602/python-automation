@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+test_name: login_api
+
+stages:
+  - name: test_login_001
+    request:
+      url: https://www.cqrc.net/account/user/login
+      method: POST
+      json:
+        account: 13996365087
+        password: 123456
+        loginWay: 0
+      headers:
+        accept: application/json, text/plain, */*
+        content-type: application/json
+    response:
+        status_code: 200
+
+---
+test_name: login_api_error
+
+stages:
+  - name: test_login_002
+    request:
+      url: https://www.cqrc.net/account/user/login
+      method: POST
+      json:
+        account: 13996365087
+        password: 12345678
+        loginWay: 0
+      headers:
+        accept: application/json, text/plain, */*
+        content-type: application/json
+    response:
+        status_code: 200
+        json:
+          code: 508
+          data: ''
+          message: '√‹¬Î¥ÌŒÛ'
