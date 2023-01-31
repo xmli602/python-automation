@@ -5,7 +5,7 @@ method: post
 data: '{ "account": "13996365087","password": "123456","loginWay": 0 }'
 except: "success"
 ---
-url: https://www.cqrc.net/account/user/login
+url: http://192.168.18.167:201/backend/login
 method: post
-data: '{ "account": "13996365087","password": "12345678","loginWay": 0 }'
-except: "ÃÜÂë´íÎó"
+data: {'username':15730332499,'password':'lxm+123456'}
+except: "µÇÂ¼³É¹¦"
