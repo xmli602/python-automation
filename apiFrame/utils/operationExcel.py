@@ -64,14 +64,8 @@ class OperartionExcel(OperationYaml):
 
 	def get_url(self,row):
 		'''获取case请求地址'''
-		caseID = self.getValue(row=row, col=ExcelVarles().v_data())
 		url = self.getValue(row=row, col=ExcelVarles().v_url())
-		if '{telephone}' in url:
-			return str(url).replace('{telepone}',OperationYaml().dictYaml()[caseID]['telephone'])
-		# elif '{ID}' in url:
-		# 	pass
-		else:
-			return url
+		return url
 
 	def get_method(self,row):
 		'''获取case请求方法'''
@@ -91,5 +85,5 @@ class OperartionExcel(OperationYaml):
 
 if __name__ == '__main__':
     obj = OperartionExcel()
-    print(obj.get_data(4))
+    print(obj.get_caseId(2))
 

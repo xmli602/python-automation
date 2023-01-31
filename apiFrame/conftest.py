@@ -8,6 +8,7 @@ import pytest
 
 obj = Requests()
 yaml = OperationYaml()
+excel = OperartionExcel()
 
 @pytest.fixture()
 def getToken():
@@ -15,3 +16,6 @@ def getToken():
 	r = obj.post(url=yaml.readYaml()[1]['url'],data=yaml.readYaml()[1]['data'])
 	token = r.json()['data']['jwtToken']
 	return token
+
+
+

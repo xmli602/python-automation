@@ -11,3 +11,21 @@ def filePath(fileDir='data',fileName='login.yaml'):
 	:return: 文件路径
 	'''
 	return os.path.join(os.path.dirname(os.path.dirname(__file__)),fileDir,fileName)
+
+def writeFile(accountId):
+	'''
+
+	:param accountId: 账号id
+	:return:
+	'''
+	with open('accountId','w') as f:
+		f.write(str(accountId))
+
+def readFile():
+	'''
+	读取账号id
+	:return: 返回账号id
+	'''
+
+	with open('accountId','r') as f:
+		return f.read()
