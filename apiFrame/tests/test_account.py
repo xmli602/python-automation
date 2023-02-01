@@ -44,7 +44,5 @@ class TestAccount():
 
 
 
-
-
 if __name__ == '__main__':
     pytest.main(["-s","-v","test_account.py::TestAccount::test_accountLeave_003"])
