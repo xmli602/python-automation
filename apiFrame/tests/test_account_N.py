@@ -7,6 +7,7 @@ from common.public import *
 import pytest
 import json
 import ast
+import allure
 
 
 
@@ -87,4 +88,7 @@ def test_account(datas):
 
 
 if __name__ == '__main__':
-	pytest.main(["-s", "-v", "test_account_N.py"])
+	pytest.main(["-s", "-v", "test_account_N.py","--alluredir","./report/result"])
+	import subprocess
+	subprocess.call('allure generate report/result/ -o report/html --clean',shell=True)
+	subprocess.call('allure open -h 127.0.0.1 -p 8088 ./report/html',shell=True)
