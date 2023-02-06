@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'success' in '{\"code\": 400, \"data\": \"\", \"message\": \"手机号码不能重复\"}'\n +  where '{\"code\": 400, \"data\": \"\", \"message\": \"手机号码不能重复\"}' = <function dumps at 0x0000025BC0CE09D8>({'code': 400, 'data': '', 'message': '手机号码不能重复'}, ensure_ascii=False)\n +    where <function dumps at 0x0000025BC0CE09D8> = json.dumps\n +    and   {'code': 400, 'data': '', 'message': '手机号码不能重复'} = <bound method Response.json of <Response [200]>>()\n +      where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+      "children" : [ {
+        "name" : "test_account[datas1]",
+        "uid" : "8298f81e43833c26",
+        "parentUid" : "b27909d204ddb4d546ffd9ff21a5f366",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675328923860,
+          "stop" : 1675328924078,
+          "duration" : 218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'测试用例ID': 'account_001', '模块': '账号管理', '接口名称': '新增账号', '请求地址': 'http://192.168.18.167:201/backend/system/user/saveUser', '前置条件': 'login', '请求方法': 'post', '请求参数类型': 'json', '请求参数': '{\"deptId\":\"1439791207755497479\",\"name\":\"autotester-05\",\"post\":\"运营人员-自动化\",\"roleIdList\":[\"1443147634252226560\"],\"extId\":\"\",\"telephone\":\"18888888805\",\"email\":\"18888888804@123.com\"}', '期望结果': 'success', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}" ]
+      } ],
+      "uid" : "b27909d204ddb4d546ffd9ff21a5f366"
+    }, {
+      "name" : "AssertionError: assert 'autotester-05' in '{\"code\": 200, \"data\": {\"total\": 0, \"current\": 1, \"records\": []}, \"message\": \"success\"}'\n +  where '{\"code\": 200, \"data\": {\"total\": 0, \"current\": 1, \"records\": []}, \"message\": \"success\"}' = <function dumps at 0x0000025BC0CE09D8>({'code': 200, 'data': {'current': 1, 'records': [], 'total': 0}, 'message': 'success'}, ensure_ascii=False)\n +    where <function dumps at 0x0000025BC0CE09D8> = json.dumps\n +    and   {'code': 200, 'data': {'current': 1, 'records': [], 'total': 0}, 'message': 'success'} = <bound method Response.json of <Response [200]>>()\n +      where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+      "children" : [ {
+        "name" : "test_account[datas2]",
+        "uid" : "74a7d454c2958c7d",
+        "parentUid" : "5f9869764e7e64a073b1ecbe75739154",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675328924117,
+          "stop" : 1675328924358,
+          "duration" : 241
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'测试用例ID': 'account_002', '模块': '账号管理', '接口名称': '获取账号', '请求地址': 'http://192.168.18.167:201/backend/system/user/pageUser?deptId=&name=&telephone={telephone}', '前置条件': 'login', '请求方法': 'get', '请求参数类型': '', '请求参数': '', '期望结果': 'autotester-05', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}" ]
+      } ],
+      "uid" : "5f9869764e7e64a073b1ecbe75739154"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

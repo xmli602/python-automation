@@ -25,7 +25,7 @@ class OperationExcelN():
 	'''操作excel'''
 	def getsheet(self):
 		'''读取excel文件sheet'''
-		case = xlrd.open_workbook(filePath(fileDir='data',fileName='accounttest.xlsx'))
+		case = xlrd.open_workbook(filePath(fileDir='data',fileName='delivertest.xlsx'))
 		return case.sheet_by_index(0)
 
 	@property

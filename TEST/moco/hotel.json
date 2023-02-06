@@ -1,0 +1,28 @@
+[
+  {
+    "request":
+    {
+      "method": "post",
+      "url": "/system",
+      "json":
+      {
+        "tel": "888888",
+        "name": "xiaomanLi",
+        "code": "88888888888888"
+      },
+      "response":
+      {
+        "json":
+        {
+          "data":
+          {
+            "room": "201",
+            "startTime": "2023-02-01",
+            "endTime": "2023-02-03",
+            "vpr": "8888888"
+          }
+        }
+      }
+    }
+  }
+]

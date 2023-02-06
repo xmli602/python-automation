@@ -1,0 +1,111 @@
+{
+  "uid" : "da94ea855e82ad70",
+  "name" : "test_account[datas1]",
+  "fullName" : "test_account_N#test_account",
+  "historyId" : "e622d43409a9c4aef6780b092958ff65",
+  "time" : {
+    "start" : 1675328143287,
+    "stop" : 1675328144175,
+    "duration" : 888
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1675328143286,
+      "stop" : 1675328143286,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1675328142912,
+      "stop" : 1675328142912,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1675328142912,
+      "stop" : 1675328142912,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1675328142912,
+      "stop" : 1675328142912,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_account_N"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GLT4U4I"
+  }, {
+    "name" : "thread",
+    "value" : "7028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_account_N"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "datas",
+    "value" : "{'测试用例ID': 'account_001', '模块': '账号管理', '接口名称': '新增账号', '请求地址': 'http://192.168.18.167:201/backend/system/user/saveUser', '前置条件': 'login', '请求方法': 'post', '请求参数类型': 'json', '请求参数': '{\"deptId\":\"1439791207755497479\",\"name\":\"autotester-05\",\"post\":\"运营人员-自动化\",\"roleIdList\":[\"1443147634252226560\"],\"extId\":\"\",\"telephone\":\"18888888805\",\"email\":\"18888888804@123.com\"}', '期望结果': 'success', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da94ea855e82ad70.json",
+  "parameterValues" : [ "{'测试用例ID': 'account_001', '模块': '账号管理', '接口名称': '新增账号', '请求地址': 'http://192.168.18.167:201/backend/system/user/saveUser', '前置条件': 'login', '请求方法': 'post', '请求参数类型': 'json', '请求参数': '{\"deptId\":\"1439791207755497479\",\"name\":\"autotester-05\",\"post\":\"运营人员-自动化\",\"roleIdList\":[\"1443147634252226560\"],\"extId\":\"\",\"telephone\":\"18888888805\",\"email\":\"18888888804@123.com\"}', '期望结果': 'success', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}" ]
+}

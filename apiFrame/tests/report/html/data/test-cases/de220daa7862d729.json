@@ -1,0 +1,111 @@
+{
+  "uid" : "de220daa7862d729",
+  "name" : "test_account[datas2]",
+  "fullName" : "test_account_N#test_account",
+  "historyId" : "3fb9cd4814564d5fac75df82d0bfe122",
+  "time" : {
+    "start" : 1675328144178,
+    "stop" : 1675328144426,
+    "duration" : 248
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1675328142912,
+      "stop" : 1675328142912,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1675328144177,
+      "stop" : 1675328144177,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1675328142912,
+      "stop" : 1675328142912,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1675328142912,
+      "stop" : 1675328142912,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_account_N"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GLT4U4I"
+  }, {
+    "name" : "thread",
+    "value" : "7028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_account_N"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "datas",
+    "value" : "{'测试用例ID': 'account_002', '模块': '账号管理', '接口名称': '获取账号', '请求地址': 'http://192.168.18.167:201/backend/system/user/pageUser?deptId=&name=&telephone={telephone}', '前置条件': 'login', '请求方法': 'get', '请求参数类型': '', '请求参数': '', '期望结果': 'autotester-05', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de220daa7862d729.json",
+  "parameterValues" : [ "{'测试用例ID': 'account_002', '模块': '账号管理', '接口名称': '获取账号', '请求地址': 'http://192.168.18.167:201/backend/system/user/pageUser?deptId=&name=&telephone={telephone}', '前置条件': 'login', '请求方法': 'get', '请求参数类型': '', '请求参数': '', '期望结果': 'autotester-05', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}" ]
+}

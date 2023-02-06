@@ -1,0 +1,78 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-GLT4U4I",
+    "children" : [ {
+      "name" : "16204-MainThread",
+      "children" : [ {
+        "name" : "test_account[datas4]",
+        "uid" : "af527cb03538ad40",
+        "parentUid" : "e720e1933b05f908256432ce5d790132",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675328924610,
+          "stop" : 1675328924836,
+          "duration" : 226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'测试用例ID': 'account_004', '模块': '账号管理', '接口名称': '账号离职', '请求地址': 'http://192.168.18.167:201/backend/system/user/manageUser?id={ID}&type=2', '前置条件': 'login', '请求方法': 'get', '请求参数类型': '', '请求参数': '', '期望结果': 'success', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}" ]
+      }, {
+        "name" : "test_account[datas2]",
+        "uid" : "74a7d454c2958c7d",
+        "parentUid" : "e720e1933b05f908256432ce5d790132",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675328924117,
+          "stop" : 1675328924358,
+          "duration" : 241
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'测试用例ID': 'account_002', '模块': '账号管理', '接口名称': '获取账号', '请求地址': 'http://192.168.18.167:201/backend/system/user/pageUser?deptId=&name=&telephone={telephone}', '前置条件': 'login', '请求方法': 'get', '请求参数类型': '', '请求参数': '', '期望结果': 'autotester-05', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}" ]
+      }, {
+        "name" : "test_account[datas0]",
+        "uid" : "8861fdc394ed19b7",
+        "parentUid" : "e720e1933b05f908256432ce5d790132",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675328923464,
+          "stop" : 1675328923857,
+          "duration" : 393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'测试用例ID': 'login', '模块': '登录', '接口名称': '登录授权', '请求地址': 'http://192.168.18.167:201/backend/login', '前置条件': '', '请求方法': 'post', '请求参数类型': 'data', '请求参数': '{\"username\":15730332499,\"password\":\"lxm+123456\"}', '期望结果': '登录成功', '是否执行': 'y', '请求头': '', '状态码': 200.0}" ]
+      }, {
+        "name" : "test_account[datas1]",
+        "uid" : "8298f81e43833c26",
+        "parentUid" : "e720e1933b05f908256432ce5d790132",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675328923860,
+          "stop" : 1675328924078,
+          "duration" : 218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'测试用例ID': 'account_001', '模块': '账号管理', '接口名称': '新增账号', '请求地址': 'http://192.168.18.167:201/backend/system/user/saveUser', '前置条件': 'login', '请求方法': 'post', '请求参数类型': 'json', '请求参数': '{\"deptId\":\"1439791207755497479\",\"name\":\"autotester-05\",\"post\":\"运营人员-自动化\",\"roleIdList\":[\"1443147634252226560\"],\"extId\":\"\",\"telephone\":\"18888888805\",\"email\":\"18888888804@123.com\"}', '期望结果': 'success', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}" ]
+      }, {
+        "name" : "test_account[datas3]",
+        "uid" : "91230d2fc30fe7d7",
+        "parentUid" : "e720e1933b05f908256432ce5d790132",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675328924366,
+          "stop" : 1675328924607,
+          "duration" : 241
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'测试用例ID': 'account_003', '模块': '账号管理', '接口名称': '编辑账号', '请求地址': 'http://192.168.18.167:201/backend/system/user/saveUser', '前置条件': 'login', '请求方法': 'post', '请求参数类型': 'json', '请求参数': '{\"id\":\"{accountId}\",\"name\":\"autotester-05-编辑\",\"post\":\"运营人员-自动化\",\"deptId\":\"1439791207755497479\",\"deptName\":\"重庆人才大市场\",\"telephone\":\"18888888805\",\"email\":\"18888888804@123.com\",\"roleIdList\":[\"1443147634252226560\"],\"status\":1,\"statusText\":\"启用\",\"extId\":\"\"}', '期望结果': 'success', '是否执行': 'y', '请求头': '{\"Authorization\":\"{token}\"}', '状态码': 200.0}" ]
+      } ],
+      "uid" : "e720e1933b05f908256432ce5d790132"
+    } ],
+    "uid" : "b5fdb608c4909b7ffb2fb8ee05ff3009"
+  } ]
+}
