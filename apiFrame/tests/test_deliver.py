@@ -20,7 +20,7 @@ cursor = cursorCre()
 def job_data():
 	'''获取投递基础数据,岗位id,企业id,hrid'''
 	sql_data = '''
-	select id as job_id,enterprise_id,hr_id from enterprise_job where hr_id <>'1000000000' and status = 3 and source =0 order by rand() limit 1 
+	select id as jobId,enterprise_id as companyId,hr_id as hrId from enterprise_job where hr_id <>'1000000000' and status = 3 and source =0 order by rand() limit 1 
 '''
 	cursor.execute(sql_data)
 	result = cursor.fetchall()
@@ -42,6 +42,12 @@ def test_deliver(datas,get_BC_token,get_userid):
 	elif len(str(params).strip()) >= 0:
 		params = json.loads(params)
 
+	def r_params():
+		for key,value in job_data().items():
+			if key in params.keys():
+				params[key] = str(value)
+		return params
+
 	# 对请求头为空以及做反序列化处理
 	header = datas[ExcelVarles.headers]
 	if len(str(header).strip()) == 0:
@@ -49,19 +55,27 @@ def test_deliver(datas,get_BC_token,get_userid):
 	elif len(str(header).strip()) >= 0:
 		header = json.loads(header)
 
+	# 获取token
+	prevResult = get_BC_token
+	# 调用替换token
+	header = excel.prevHeaders(prevResult)
+
+	check_msg = ''  # 是否发起聊天
+
 	if datas[ExcelVarles.caseName] == '检查是否已发起聊天':
-		# print(params,type(params))
-		# params['hrId'] = job_data()['hr_id']
-		# params['jobId'] = job_data()['job_id']
-		# params['userId'] = get_userid
-		header = json.loads(str(datas[ExcelVarles.headers]).replace('{token}', get_BC_token))
-		# print(header,type(header))
-		# print(params,type(params))
-		a = json.dumps(params)
-		a = json.loads(a)
-		print(a,type(a))
-		# r = obj.post(url=datas[ExcelVarles.caseUrl],json = params,headers = header)
-		# print(r.json())
+		for key,value in job_data().items():
+			if key in params.keys():
+				params[key] = str(value)
+		params['userId'] = get_userid
+		r = obj.post(url=datas[ExcelVarles.caseUrl],json = params,headers = header)
+		assert r.json()['code'] == 200
+		check_msg = datas[ExcelVarles.post_params] = r.json()['data']
+	elif datas[ExcelVarles.caseName] == '创建聊天房间' and check_msg is '':
+		r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
+		print(r.json())
+
+
+
 
 
 if __name__ == '__main__':

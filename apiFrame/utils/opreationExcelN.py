@@ -19,6 +19,7 @@ class ExcelVarles:
 	isRun = '是否执行'
 	headers = '请求头'
 	status_code = '状态码'
+	post_params = '后置参数'
 
 
 class OperationExcelN():
