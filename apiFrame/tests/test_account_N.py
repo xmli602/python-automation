@@ -64,6 +64,7 @@ def test_account(datas):
 		elif datas[ExcelVarles.caseName] == '账号离职':
 			return str(datas[ExcelVarles.caseUrl]).replace('{ID}',readFile())
 
+
 	if datas[ExcelVarles.caseMethod] == 'get':
 		r = obj.get(url=geturl(), headers=header)
 		case_assert_result(rquest=r)

@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-# 用户登录成功
-url: http://192.168.18.167:2002/account/user/login
-method: post
-data: { "account": "13996365087","password": "123456","loginWay": 0 }
-except: "success"
----
+# BC端登录
 url: http://192.168.18.167:2002/account/user/login
 method: post
 data: { "account": "13996365087","password": "123456","loginWay": 0 }

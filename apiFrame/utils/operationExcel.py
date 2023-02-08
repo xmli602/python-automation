@@ -14,6 +14,8 @@ class ExcelVarles():
 	method = 3
 	data = 4
 	expect = 5
+	status_code = 6
+	headers = 7
 
 	def v_caseId(self):
 		return self.caseId
@@ -33,12 +35,22 @@ class ExcelVarles():
 	def v_except(self):
 		return self.expect
 
+	def v_status_code(self):
+		return self.status_code
+
+	def v_headers(self):
+		return self.headers
 
 class OperartionExcel(OperationYaml):
 	'''操作excle文件'''
 	def getSheet(self):
-		account = xlrd.open_workbook(filePath(fileDir='data',fileName='account.xlsx'))
+		account = xlrd.open_workbook(filePath(fileDir='data',fileName='deliver.xlsx'))
 		return account.sheet_by_index(0)
+	#
+	# def getSheet(self,fileDir,fileName):
+	# 	account = xlrd.open_workbook(filePath(fileDir=fileDir,fileName=fileName))
+	# 	return account.sheet_by_index(0)
+
 
 	@property
 	def getRows(self):
@@ -82,8 +94,15 @@ class OperartionExcel(OperationYaml):
 		'''获取case期望结果'''
 		return self.getValue(row=row, col=ExcelVarles().v_except())
 
+	def get_status_code(self,row):
+		'''获取case的响应码'''
+		return self.getValue(row=row,col=ExcelVarles().v_status_code())
+
+	def get_headers(self,row):
+		'''获取case的响应码'''
+		return self.getValue(row=row,col=ExcelVarles().v_headers())
 
 if __name__ == '__main__':
     obj = OperartionExcel()
-    print(obj.get_caseId(2))
+    print(obj.get_headers(1))
 

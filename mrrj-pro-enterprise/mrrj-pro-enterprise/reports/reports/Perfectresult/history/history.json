@@ -1,0 +1,89 @@
+{
+  "aabd286bed7338ab8af704edce7da433" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "563351e0c972aef2",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+      "time" : {
+        "start" : 1675761457073,
+        "stop" : 1675761457395,
+        "duration" : 322
+      }
+    }, {
+      "uid" : "aa296dc6b1f535ae",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+      "time" : {
+        "start" : 1675761457073,
+        "stop" : 1675761457395,
+        "duration" : 322
+      }
+    } ]
+  },
+  "cd17d92672e003499ddeffed9fd35984" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "f74637214caa100e",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+      "time" : {
+        "start" : 1675761457753,
+        "stop" : 1675761458019,
+        "duration" : 266
+      }
+    }, {
+      "uid" : "5d8f239e90aedcb7",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+      "time" : {
+        "start" : 1675761457753,
+        "stop" : 1675761458019,
+        "duration" : 266
+      }
+    } ]
+  },
+  "fda3fed83b54f4b6f54724b9c8efba94" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "83460b23d3b17fe7",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+      "time" : {
+        "start" : 1675761457473,
+        "stop" : 1675761457746,
+        "duration" : 273
+      }
+    }, {
+      "uid" : "ab241576b453135d",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+      "time" : {
+        "start" : 1675761457473,
+        "stop" : 1675761457746,
+        "duration" : 273
+      }
+    } ]
+  }
+}

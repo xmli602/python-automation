@@ -105,12 +105,25 @@ class OperationExcelN():
 				headers = str(headers).replace('{token}',prevResult)
 				return json.loads(headers)
 
+	def write_casePre(self,casePre):
+		'''
+
+		:param casePre: 写入前置条件
+		:return:
+		'''
+		for item in self.runs():
+			if item['接口名称'] in ('投递简历','发送聊天消息'):
+				item['前置条件'] = casePre
+		return None
+
+
+
+
 
 
 if __name__ == '__main__':
     obj = OperationExcelN()
-    for i in obj.cases_list():
-	    print(i)
+    print(obj.write_casePre('ces'))
 
     # print(obj.prevHeaders('ces'))
     # print(obj.case_prev('login'))

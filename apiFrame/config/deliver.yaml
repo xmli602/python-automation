@@ -1,0 +1,9 @@
+deliver_001: {"hrId": "{hr_id}", "jobId": "{job_id}", "userId": "{user_id}"}
+
+deliver_002: {"hrId":"{hr_id}","jobId":"{job_id}","companyId":"{company_id}","route":0,"routeId":"","tag":1}
+
+deliver_003: {"jobId":"{job_id}","userId":"{user_id}"}
+
+deliver_004: {"id":"{resume_id}","jobId":"{job_id}","inviteId":"","companyId":"{company_id}","deliverType":0,"route":"0","routeId":""}
+
+deliver_005: {"msgType":"deliverResume","jobId":"{job_id}","extension":"{msg_id}","roomId":"{room_id_new}","sendId":"{user}","receiveId":"{hr_id}","msgContent":"我对您的这个岗位很感兴趣，这是我的简历，请查收,脚本投递","sendTime":"{sendtime}"}
