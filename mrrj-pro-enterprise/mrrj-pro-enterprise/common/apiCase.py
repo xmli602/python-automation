@@ -18,10 +18,18 @@ class APICase:
         result = re.finditer('#(.+?)#', my_string)
         for el in result:
             target = el.group()  # #smsflag#
+            print(target)
             prop = el.group(1)  #
+            print(prop)
             value = getattr(self, prop)
+            print(value)
             my_string = my_string.replace(target, value)
         return my_string
 
 
 case = APICase()
+# case.name = '李晓曼'
+# case.gender = '女'
+# case.parentId = "1"
+# a = {"name":"#name#","gender":"#gender#","parentId":"0","status":1}
+# print(case.replace_data(str(a)))

@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec80aac-5957-42c0-a139-491332da0138" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="1ec80aac-5957-42c0-a139-491332da0138" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../../TEST/基础练习/excelopra/operaexcel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/apiFrameTavern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apiFrame/LogFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apiFrame/common/log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/mrrj-pro-enterprise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LogFile.2023-02-07" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/136ea469-f274-4ef0-a140-24cf3261b3b8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/1408a17a-25aa-4447-8ffd-1ce8028695e7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/37676544-6386-49bf-bde8-bbac68130b9a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/4f54cb23-f11d-4a0d-b57c-34fef2e60e8e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/63da967f-1608-41ba-a3b6-d7a24dd01a6b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/65b0a776-49ac-4b2d-ba4a-68c9672a4122-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/790f9a7c-b79c-44e3-901e-6f49819fdae3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/9a282ae1-eb0e-46ca-8fb3-c3440567db41-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/aefab4b3-2125-4716-9e70-58bd289b0cea-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/afd64d74-1d56-48c2-8a4d-e90bfb73a4b2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/c869876c-efb6-4154-9ef0-23513e335db4-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/c9d30e15-d309-4b04-a2c1-24d4b7565544-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/cef865be-f4f9-4214-acf1-6f55dd467a9c-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/cf3e4139-265a-4ac6-adef-6356ea6940d8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/ddaea161-7ed1-420f-9697-68761a0a5c32-result.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/自动化学习.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/自动化学习.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apiFrame/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apiFrame/data/delivertest.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/data/delivertest.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apiFrame/test_aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/test_aa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apiFrame/tests/test_account_N.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/tests/test_account_N.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_P.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_P.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apiFrame/utils/operationYaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/utils/operationYaml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apiFrame/utils/opreationExcelN.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/utils/opreationExcelN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogFile" beforeDir="false" afterPath="$PROJECT_DIR$/LogFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/apiCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/apiCase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/baseRequests.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/baseRequests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/0e59da43-d466-4936-9f94-3b259ed0d2cd-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/47142ffe-1feb-403e-a344-5702c3acd37b-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/72fc8ce6-e391-4052-a242-3045c428da36-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/9a57b0be-c13d-4885-aba5-f0f0763edb80-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/f72e4d82-ff2b-4c0c-b083-8b1ca0dd84a3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testdata/数据设置/部门管理(基础数据).xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testdata/数据设置/部门管理(基础数据).xlsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,92 +68,15 @@
     <SUITE FILE_PATH="coverage/mrrj_pro_enterprise$py_test_for_test_base_information_dept_TestBaseInformationDept_test_print_id.coverage" NAME="py.test for test_base_information_dept.TestBaseInformationDept.test_print_id Coverage Results" MODIFIED="1675073261044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/enterprise/base_information" />
     <SUITE FILE_PATH="coverage/mrrj_pro_enterprise$run.coverage" NAME="run Coverage Results" MODIFIED="1675761455325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-              <folding>
-                <element signature="e#169#180#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="e_login_service.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/enterpriseService/E_login/e_login_service.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_base_information_dept.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testcase/enterprise/base_information/test_base_information_dept.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="36" />
-              <folding>
-                <element signature="e#190#203#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apiCase.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/apiCase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="baseRequests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/baseRequests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-              <folding>
-                <element signature="e#161#174#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enterprise_variables.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/variables/enterprise_variables.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -142,6 +118,10 @@
     <option name="y" value="25" />
     <option name="width" value="1493" />
     <option name="height" value="970" />
+  </component>
+  <component name="ProjectId" id="2LU1iQHNLtkpj8KBozID2FcYZ42" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -191,11 +171,21 @@
       <pane id="Scratches" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../apiFrame" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -224,20 +214,9 @@
       <recent name="$PROJECT_DIR$/common" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Python.run">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mrrj-pro-enterprise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -248,15 +227,40 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="mrrj-pro-enterprise" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcase/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="apiCase" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mrrj-pro-enterprise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/apiCase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mrrj-pro-enterprise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -268,64 +272,68 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="mrrj-pro-enterprise" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="py.test for test_base_information_dept.TestBaseInformationDept.test_print_id" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="mrrj-pro-enterprise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/enterprise/base_information" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="mrrj-pro-enterprise" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_base_information_dept.TestBaseInformationDept.test_print_id&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
     </configuration>
     <configuration name="py.test in test_base_information_dept.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="mrrj-pro-enterprise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/enterprise/base_information" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="mrrj-pro-enterprise" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/testcase/enterprise/base_information/test_base_information_dept.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.run" />
-      <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_base_information_dept.TestBaseInformationDept.test_print_id" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_base_information_dept.py" />
+    <list>
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.__init__" />
+      <item itemvalue="Python.apiCase" />
+      <item itemvalue="Python tests.py.test for test_base_information_dept.TestBaseInformationDept.test_print_id" />
+      <item itemvalue="Python tests.py.test in test_base_information_dept.py" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.run" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_base_information_dept.TestBaseInformationDept.test_print_id" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_base_information_dept.py" />
+      <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.apiCase" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python tests.py.test for test_base_information_dept.TestBaseInformationDept.test_print_id" />
+        <item itemvalue="Python tests.py.test in test_base_information_dept.py" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -336,6 +344,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674982032415</updated>
+      <workItem from="1675910979106" duration="4545000" />
+      <workItem from="1675926096823" duration="1051000" />
+      <workItem from="1675927172889" duration="1237000" />
     </task>
     <servers />
   </component>
@@ -379,23 +390,28 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/testcase/enterprise/base_information/test_base_information_dept.py</url>
-          <line>27</line>
+          <line>26</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
     </breakpoint-manager>
-    <watches-manager />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/test_base_information_dept_py$apiCase.coverage" NAME="apiCase Coverage Results" MODIFIED="1675912046620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/test_base_information_dept_py$run.coverage" NAME="run Coverage Results" MODIFIED="1675914192674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/variables/enterprise_variables.py">

@@ -3,6 +3,7 @@
 
 # 测试用例参数化的方式操作excel
 import xlrd
+import openpyxl
 from common.public import filePath
 import json
 
@@ -105,16 +106,36 @@ class OperationExcelN():
 				headers = str(headers).replace('{token}',prevResult)
 				return json.loads(headers)
 
-	def write_casePre(self,casePre):
+	def write_casePre(self,casePre,casename):
 		'''
 
 		:param casePre: 写入前置条件
 		:return:
 		'''
 		for item in self.runs():
-			if item['接口名称'] in ('投递简历','发送聊天消息'):
+			if item['接口名称'] == casename:
 				item['前置条件'] = casePre
 		return None
+
+	def WriteExcel(excelpath: str, sheetname: str, index: int, writevalue: str):
+		"""
+		写入数据
+		:param excelpath: 文件路径 -->  Excel
+		:param sheetname: 文件sheet名称
+		:param writevalue: 写入的数据
+		:param index: 单元格位置
+		:return: inster
+		"""
+		try:
+			wb = openpyxl.load_workbook(excelpath)  # 加载工作簿
+			sheet = wb[sheetname]  # 获得sheet对象
+			active = wb.active  # 写入文件时需要激活
+			active[index] = str(writevalue)  # 通过单元格写入 例如：A1 A2 A3等
+			wb.save(excelpath)  # 保存
+		# 	log.info('成功在%s表的%s页%s单元格写入数据内容为：%s' % (excelpath, sheetname, index, writevalue))
+		except Exception as e:
+			print(e)
+			# log.error("WriteExcel Error：{}".format(e))
 
 
 
@@ -123,7 +144,8 @@ class OperationExcelN():
 
 if __name__ == '__main__':
     obj = OperationExcelN()
-    print(obj.write_casePre('ces'))
+    # print(obj.write_casePre(casePre='dsdsds',casename='投递简历'))
+    # print(obj.cases_list())
 
     # print(obj.prevHeaders('ces'))
-    # print(obj.case_prev('login'))
+    print(obj.case_prev('deliver_001'))

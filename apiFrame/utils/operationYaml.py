@@ -20,10 +20,10 @@ class OperationYaml:
 if __name__ == '__main__':
     obj = OperationYaml()
     items = obj.readYaml()
-    print(items[0]['url'],type(items))
+    print(items[1]['url'],type(items))
     # print(items['account_001']['telephone'])
     # print(type(items[1]['data']))
 #     items = obj.dictYaml()
-#
+#readYaml()[2]['url']
 
 

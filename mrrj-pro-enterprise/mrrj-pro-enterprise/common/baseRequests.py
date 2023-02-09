@@ -12,6 +12,7 @@
 import allure
 import requests
 from common.log import log
+# import log
 
 class BaseRequests(object):
     def __init__(self,url):

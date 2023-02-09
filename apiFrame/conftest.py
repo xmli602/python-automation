@@ -28,7 +28,7 @@ def get_BC_token():
 @pytest.fixture()
 def get_userid(get_BC_token):
 	'''获取userid'''
-	r = obj.get(url=yaml.readYaml()[2]['url'],headers={'Authorization':'{0}'.format(get_BC_token)})
+	r = obj.get(url=yaml.readYaml()[1]['url'],headers={'Authorization':'{0}'.format(get_BC_token)})
 	return r.json()['data']['userId']
 
 @pytest.fixture()

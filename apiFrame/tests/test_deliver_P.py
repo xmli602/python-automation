@@ -8,6 +8,7 @@ import json
 from utils.operationDB import *
 from utils.opreationExcelN import OperationExcelN,ExcelVarles
 from utils.operationYaml import OperationYaml
+from common.public import *
 from datetime import datetime
 from base.method import Requests
 
@@ -55,36 +56,45 @@ def test_deliver(datas,get_BC_token,get_userid):
 	# 调用替换token
 	header = excel.prevHeaders(prevResult)
 
-	check_msg = ''  # 是否发起聊天
+	# check_msg = ''  # 是否发起聊天
 	check_deliver = '' # 是否存在未接受的投递
 	check_deliver_msg = '' # 检查投递返回消息
 
 	if datas[ExcelVarles.caseName] == '检查是否已发起聊天':
 		print(r_params())
-		r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
+		r = obj.post(url=datas[ExcelVarles.caseUrl],json = {'hrId': '1451127324191051776', 'jobId': '1451147265325748224', 'userId': '1567700481201115136'},headers = header)
 		case_assert_result(rquest=r)
-		check_msg = r.json()['data']
-	elif datas[ExcelVarles.caseName] == '创建聊天房间' and check_msg is '':
-		r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
-		case_assert_result(rquest=r)
-		basics.update({"extension":r.json()['data']['deliverId']})
-		basics.update({"roomId":r.json()['data']['roomId']})
-	elif datas[ExcelVarles.caseName] == '检查是否有未接收的投递':
-		r = obj.post(url=datas[ExcelVarles.caseUrl], json=r_params(), headers=header)
-		case_assert_result(rquest=r)
-		check_deliver = r.json()['data']
-		check_deliver_msg = r.json()['message']
-		if check_deliver == True:
-			excel.write_casePre(casePre=check_deliver)
-	elif datas[ExcelVarles.casePre] == check_deliver:
-		if datas[ExcelVarles.caseName] == '发送聊天消息':
-			r_params()["sendId"] = basics["userId"]
-			r_params()["receiveId"] = basics["hrId"]
-			r_params()["sendTime"] = "2023-02-08 11:19:00"
-		r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
-		case_assert_result(rquest=r)
-	else:
-		print(check_deliver_msg)
+		check_msg = r.json()['data']['total']
+		print(r.json(),print('检查：' + str(check_msg)))
+		if check_msg == 0:
+			excel.WriteExcel(excelpath=filePath(fileDir='data',fileName='delivertest.xlsx'),sheetname='Sheet1',index='E3',writevalue='check_msg')
+			print('前置条件：'+datas[ExcelVarles.casePre])
+	elif datas[ExcelVarles.caseName] == '创建聊天房间' and datas[ExcelVarles.casePre] == 0:
+		print('前置条件：'+datas[ExcelVarles.casePre])
+	# 	r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
+	# 	case_assert_result(rquest=r)
+	# 	basics.update({"extension":r.json()['data']['deliverId']})
+	# 	basics.update({"roomId":r.json()['data']['roomId']})
+	# 	print(r.json())
+	# elif datas[ExcelVarles.caseName] == '检查是否有未接收的投递':
+	# 	r = obj.post(url=datas[ExcelVarles.caseUrl], json=r_params(), headers=header)
+	# 	case_assert_result(rquest=r)
+	# 	check_deliver = r.json()['data']
+	# 	check_deliver_msg = r.json()['message']
+	# 	print(r.json())
+	# 	if check_deliver == True:
+	# 		excel.write_casePre(casePre=check_deliver,casename='投递简历')
+	# 		excel.write_casePre(casePre=check_deliver,casename='发送聊天消息')
+	# elif datas[ExcelVarles.casePre] == check_deliver:
+	# 	print(datas[ExcelVarles.casePre])
+	# 	if datas[ExcelVarles.caseName] == '发送聊天消息':
+	# 		r_params()["sendId"] = basics["userId"]
+	# 		r_params()["receiveId"] = basics["hrId"]
+	# 		r_params()["sendTime"] = "2023-02-09 15:44:00"
+	# 	r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
+	# 	case_assert_result(rquest=r)
+	# else:
+	# 	print(check_deliver_msg)
 
 if __name__ == '__main__':
 	pytest.main(["-s", "-v", "test_deliver_P.py"])

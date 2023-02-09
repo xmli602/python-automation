@@ -5,10 +5,12 @@ import pytest
 from utils.opreationExcelN import OperationExcelN,ExcelVarles
 from utils.operationYaml import OperationYaml
 from common.public import *
+from common.log import *
 from base.method import Requests
 import json
 import time
 from datetime import datetime
+import openpyxl
 
 obj = Requests()
 excel = OperationExcelN()
@@ -32,9 +34,33 @@ def job_data():
 		basics.update(result[0])
 	return basics
 
-aa = job_data()
+def WriteExcel(excelpath: str, sheetname: str, index: int, writevalue: str):
+	"""
+	写入数据
+	:param excelpath: 文件路径 -->  Excel
+	:param sheetname: 文件sheet名称
+	:param writevalue: 写入的数据
+	:param index: 单元格位置
+	:return: inster
+	"""
+	try:
+		wb = openpyxl.load_workbook(excelpath)  # 加载工作簿
+		sheet = wb[sheetname]  # 获得sheet对象
+		active = wb.active  # 写入文件时需要激活
+		active[index] = str(writevalue)  # 通过单元格写入 例如：A1 A2 A3等
+		wb.save(excelpath)  # 保存
+		log.info('成功在%s表的%s页%s单元格写入数据内容为：%s' % (excelpath, sheetname, index, writevalue))
+	except Exception as e:
+		log.error("WriteExcel Error：{}".format(e))
 
-print(aa)
+WriteExcel(excelpath=filePath(fileDir='data',fileName='delivertest.xlsx'),sheetname='Sheet1',index='A8',writevalue='lxm')
+
+# a = "[[1,2], [3,4], [5,6], [7,8], [9,0]]"
+# print(type(a))
+# b = eval(a)
+# print(type(b))
+# print(b)
+
 
 # params = { "sendId":"{user}","receiveId":"{hr_id}"}
 #

@@ -39,7 +39,7 @@ def test_account(datas):
 	'''
 	# 执行前置条件关联的测试点
 	r = obj.post(
-		url=excel.case_prev(datas[ExcelVarles.casePre])[ExcelVarles.caseUrl],
+		url=excel.ca_prev(datas[ExcelVarles.casePre])[ExcelVarles.caseUrl],
 		data=json.loads(excel.case_prev(datas[ExcelVarles.casePre])[ExcelVarles.params])
 	)
 	prevResult = r.json()['data']['jwtToken']
