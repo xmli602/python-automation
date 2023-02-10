@@ -5,57 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ec80aac-5957-42c0-a139-491332da0138" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../TEST/基础练习/excelopra/operaexcel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/apiFrameTavern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../apiFrame/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../apiFrame/LogFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../apiFrame/common/log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_new.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/mrrj-pro-enterprise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LogFile.2023-02-07" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/136ea469-f274-4ef0-a140-24cf3261b3b8-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/1408a17a-25aa-4447-8ffd-1ce8028695e7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/37676544-6386-49bf-bde8-bbac68130b9a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/4f54cb23-f11d-4a0d-b57c-34fef2e60e8e-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/63da967f-1608-41ba-a3b6-d7a24dd01a6b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/65b0a776-49ac-4b2d-ba4a-68c9672a4122-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/790f9a7c-b79c-44e3-901e-6f49819fdae3-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/9a282ae1-eb0e-46ca-8fb3-c3440567db41-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/aefab4b3-2125-4716-9e70-58bd289b0cea-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/afd64d74-1d56-48c2-8a4d-e90bfb73a4b2-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/c869876c-efb6-4154-9ef0-23513e335db4-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/c9d30e15-d309-4b04-a2c1-24d4b7565544-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/cef865be-f4f9-4214-acf1-6f55dd467a9c-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/cf3e4139-265a-4ac6-adef-6356ea6940d8-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/temp_allurefile/ddaea161-7ed1-420f-9697-68761a0a5c32-result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/自动化学习.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/自动化学习.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apiFrame/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../apiFrame/data/delivertest.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/data/delivertest.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apiFrame/test_aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/test_aa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apiFrame/tests/test_account_N.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/tests/test_account_N.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_P.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_P.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_new.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../apiFrame/utils/operationYaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/utils/operationYaml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../apiFrame/utils/opreationExcelN.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/utils/opreationExcelN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogFile" beforeDir="false" afterPath="$PROJECT_DIR$/LogFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/apiCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/apiCase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/baseRequests.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/baseRequests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/0e59da43-d466-4936-9f94-3b259ed0d2cd-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/47142ffe-1feb-403e-a344-5702c3acd37b-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/72fc8ce6-e391-4052-a242-3045c428da36-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/9a57b0be-c13d-4885-aba5-f0f0763edb80-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/temp_allurefile/f72e4d82-ff2b-4c0c-b083-8b1ca0dd84a3-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/数据设置/部门管理(基础数据).xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testdata/数据设置/部门管理(基础数据).xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,7 +303,8 @@
       <updated>1674982032415</updated>
       <workItem from="1675910979106" duration="4545000" />
       <workItem from="1675926096823" duration="1051000" />
-      <workItem from="1675927172889" duration="1237000" />
+      <workItem from="1675927172889" duration="1238000" />
+      <workItem from="1675991762038" duration="3416000" />
     </task>
     <servers />
   </component>

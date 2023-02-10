@@ -71,30 +71,30 @@ def test_deliver(datas,get_BC_token,get_userid):
 			print('前置条件：'+datas[ExcelVarles.casePre])
 	elif datas[ExcelVarles.caseName] == '创建聊天房间' and datas[ExcelVarles.casePre] == 0:
 		print('前置条件：'+datas[ExcelVarles.casePre])
-	# 	r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
-	# 	case_assert_result(rquest=r)
-	# 	basics.update({"extension":r.json()['data']['deliverId']})
-	# 	basics.update({"roomId":r.json()['data']['roomId']})
-	# 	print(r.json())
-	# elif datas[ExcelVarles.caseName] == '检查是否有未接收的投递':
-	# 	r = obj.post(url=datas[ExcelVarles.caseUrl], json=r_params(), headers=header)
-	# 	case_assert_result(rquest=r)
-	# 	check_deliver = r.json()['data']
-	# 	check_deliver_msg = r.json()['message']
-	# 	print(r.json())
-	# 	if check_deliver == True:
-	# 		excel.write_casePre(casePre=check_deliver,casename='投递简历')
-	# 		excel.write_casePre(casePre=check_deliver,casename='发送聊天消息')
-	# elif datas[ExcelVarles.casePre] == check_deliver:
-	# 	print(datas[ExcelVarles.casePre])
-	# 	if datas[ExcelVarles.caseName] == '发送聊天消息':
-	# 		r_params()["sendId"] = basics["userId"]
-	# 		r_params()["receiveId"] = basics["hrId"]
-	# 		r_params()["sendTime"] = "2023-02-09 15:44:00"
-	# 	r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
-	# 	case_assert_result(rquest=r)
-	# else:
-	# 	print(check_deliver_msg)
+		r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
+		case_assert_result(rquest=r)
+		basics.update({"extension":r.json()['data']['deliverId']})
+		basics.update({"roomId":r.json()['data']['roomId']})
+		print(r.json())
+	elif datas[ExcelVarles.caseName] == '检查是否有未接收的投递':
+		r = obj.post(url=datas[ExcelVarles.caseUrl], json=r_params(), headers=header)
+		case_assert_result(rquest=r)
+		check_deliver = r.json()['data']
+		check_deliver_msg = r.json()['message']
+		print(r.json())
+		if check_deliver == True:
+			excel.write_casePre(casePre=check_deliver,casename='投递简历')
+			excel.write_casePre(casePre=check_deliver,casename='发送聊天消息')
+	elif datas[ExcelVarles.casePre] == check_deliver:
+		print(datas[ExcelVarles.casePre])
+		if datas[ExcelVarles.caseName] == '发送聊天消息':
+			r_params()["sendId"] = basics["userId"]
+			r_params()["receiveId"] = basics["hrId"]
+			r_params()["sendTime"] = "2023-02-09 15:44:00"
+		r = obj.post(url=datas[ExcelVarles.caseUrl],json = r_params(),headers = header)
+		case_assert_result(rquest=r)
+	else:
+		print(check_deliver_msg)
 
 if __name__ == '__main__':
 	pytest.main(["-s", "-v", "test_deliver_P.py"])

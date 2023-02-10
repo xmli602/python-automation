@@ -84,8 +84,8 @@ class OperationExcelN():
 		:param casePrev: 前置测试条件
 		:return:
 		'''
-		for item in self.runs():
-			# print(item.values())
+		for item in self.cases_list():
+			# print(item[ExcelVarles.caseID])
 			# print(item[ExcelVarles.casePre])
 			if casePrev in item.values():
 				return item
@@ -138,14 +138,11 @@ class OperationExcelN():
 			# log.error("WriteExcel Error：{}".format(e))
 
 
-
-
-
-
 if __name__ == '__main__':
     obj = OperationExcelN()
     # print(obj.write_casePre(casePre='dsdsds',casename='投递简历'))
     # print(obj.cases_list())
-
     # print(obj.prevHeaders('ces'))
-    print(obj.case_prev('deliver_001'))
+    # pre_list = ['deliver_001','deliver_002']
+    # for i in pre_list:
+    #     print(obj.case_prev(i))

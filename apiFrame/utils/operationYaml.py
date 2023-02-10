@@ -12,7 +12,7 @@ class OperationYaml:
 		with open(filePath(),'r',encoding='gbk') as f:
 			return list(yaml.safe_load_all(f))
 
-	def dictYaml(self,fileDir='config',fileName='deliver.yaml'):
+	def dictYaml(self,fileDir='config',fileName='account.yaml'):
 		'''读取yaml文件为字典类型'''
 		with open(filePath(fileDir=fileDir,fileName=fileName),'r',encoding='gbk') as f:
 			return yaml.load(f,Loader=yaml.FullLoader)
