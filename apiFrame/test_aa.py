@@ -53,7 +53,7 @@ def WriteExcel(excelpath: str, sheetname: str, index: int, writevalue: str):
 	except Exception as e:
 		log.error("WriteExcel Error：{}".format(e))
 
-WriteExcel(excelpath=filePath(fileDir='data',fileName='delivertest.xlsx'),sheetname='Sheet1',index='A8',writevalue='lxm')
+# WriteExcel(excelpath=filePath(fileDir='data',fileName='delivertest.xlsx'),sheetname='Sheet1',index='A8',writevalue='lxm')
 
 # a = "[[1,2], [3,4], [5,6], [7,8], [9,0]]"
 # print(type(a))
@@ -70,6 +70,7 @@ WriteExcel(excelpath=filePath(fileDir='data',fileName='delivertest.xlsx'),sheetn
 
 # sendTime = datetime.now().replace(microsecond=0)
 # print(sendTime)
+
 
 
 

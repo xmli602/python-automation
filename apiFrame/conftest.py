@@ -2,33 +2,33 @@
 # Author:xmLi
 
 from base.method import Requests
-from utils.operationExcel import OperartionExcel
-from utils.operationYaml import OperationYaml
+from utils.operationExcel import *
+from utils.operationYaml import *
 import pytest
 import pymysql
 
 obj = Requests()
-yaml = OperationYaml()
-excel = OperartionExcel()
+# yaml = OperationYaml()
+# excel = OperartionExcel()
 
 @pytest.fixture()
 def getToken():
 	'''获取运营端token'''
-	r = obj.post(url=yaml.readYaml()[1]['url'],data=yaml.readYaml()[1]['data'])
+	r = obj.post(url=yaml_example.readYaml()[2]['url'],data=yaml_example.readYaml()[2]['data'])
 	token = r.json()['data']['jwtToken']
 	return token
 
 @pytest.fixture()
 def get_BC_token():
 	'''获取BC端token'''
-	r = obj.post(url=yaml.readYaml()[0]['url'],json = yaml.readYaml()[0]['data'])
+	r = obj.post(url=yaml_example.readYaml()[0]['url'],json = yaml_example.readYaml()[0]['data'])
 	token = 'bearer ' + r.json()['data']['accessToken']
 	return token
 
 @pytest.fixture()
 def get_userid(get_BC_token):
 	'''获取userid'''
-	r = obj.get(url=yaml.readYaml()[1]['url'],headers={'Authorization':'{0}'.format(get_BC_token)})
+	r = obj.get(url=yaml_example.readYaml()[1]['url'],headers={'Authorization':'{0}'.format(get_BC_token)})
 	return r.json()['data']['userId']
 
 @pytest.fixture()

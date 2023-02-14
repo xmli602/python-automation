@@ -3,3 +3,7 @@ account_001: {"deptId":"1439791207755497479","name":"autotester-05","post":"运营
 account_002: "18888888806"
 
 account_004: {"deptId":"1439791207755497479","name":"autotester-04-编辑","post":"运营人员-自动化","roleIdList":["1443147634252226560"],"extId":"","telephone":"18888888806","email":"18888888804@123.com"}
+
+dept_001: {"name":"Auto一级","parentId":"1439791207755497479","siteCode":"500100"}
+
+dept_002: {"name":"Auto二级","parentId":{P_id},"siteCode":"500100"}

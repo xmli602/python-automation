@@ -6,6 +6,7 @@ import xlrd
 import openpyxl
 from common.public import filePath
 import json
+from utils.operationExcel import *
 
 class ExcelVarles:
 	caseID = '测试用例ID'
@@ -27,7 +28,7 @@ class OperationExcelN():
 	'''操作excel'''
 	def getsheet(self):
 		'''读取excel文件sheet'''
-		case = xlrd.open_workbook(filePath(fileDir='data',fileName='delivertest.xlsx'))
+		case = xlrd.open_workbook(filePath(fileDir='data',fileName='depttest.xlsx'))
 		return case.sheet_by_index(0)
 
 	@property
@@ -39,6 +40,7 @@ class OperationExcelN():
 	def getCols(self):
 		'''获取文件中列数'''
 		return self.getsheet().ncols
+
 
 	@property
 	def getExcelDates(self):
@@ -78,6 +80,14 @@ class OperationExcelN():
 				params_list.append(json.loads(params))
 		return params_list
 
+	def get_data(self):
+		'''获取case请求参数'''
+		# dataID = '' # 获取excel中参数代号
+		for item in self.runs():
+			dataID = item[ExcelVarles.caseID]
+		items = OperationYaml().dictYaml()
+		return items[dataID]  # 返回对应代号的参数值
+
 	def case_prev(self,casePrev):
 		'''
 		根据前置条件寻找关联case
@@ -85,8 +95,6 @@ class OperationExcelN():
 		:return:
 		'''
 		for item in self.cases_list():
-			# print(item[ExcelVarles.caseID])
-			# print(item[ExcelVarles.casePre])
 			if casePrev in item.values():
 				return item
 		return None
@@ -138,8 +146,12 @@ class OperationExcelN():
 			# log.error("WriteExcel Error：{}".format(e))
 
 
-if __name__ == '__main__':
-    obj = OperationExcelN()
+
+execlN = OperationExcelN()
+
+# if __name__ == '__main__':
+# 	print(execlN.get_data(),type(execlN.get_data()))
+    # obj = OperationExcelN()
     # print(obj.write_casePre(casePre='dsdsds',casename='投递简历'))
     # print(obj.cases_list())
     # print(obj.prevHeaders('ces'))

@@ -6,17 +6,16 @@
 import pytest
 import json
 from utils.operationDB import *
-from utils.opreationExcelN import OperationExcelN,ExcelVarles
+from utils.opreationExcelN import *
 from utils.operationYaml import OperationYaml
 from common.public import *
 from datetime import datetime
 from base.method import Requests
 
 obj = Requests()
-excel = OperationExcelN()
-yaml = OperationYaml()
 
-@pytest.mark.parametrize('datas',excel.runs())
+
+@pytest.mark.parametrize('datas',execl.runs())
 def test_deliver(datas,get_BC_token,get_userid):
 	'''简历投递流程测试'''
 
@@ -59,7 +58,8 @@ def test_deliver(datas,get_BC_token,get_userid):
 	# 获取token
 	prevResult = get_BC_token
 	# 调用替换token
-	header = excel.prevHeaders(prevResult)
+	header = execlN.prevHeaders(prevResult)
+
 
 	# 执行所有前置条件关联的测试点
 	case_pre = datas[ExcelVarles.casePre]
@@ -67,16 +67,16 @@ def test_deliver(datas,get_BC_token,get_userid):
 	for pre in casepre_list:
 		try:
 			r_pre = obj.post(
-				url=excel.case_prev(pre)[ExcelVarles.caseUrl],
-				json = r_params(json.loads(excel.case_prev(pre)[ExcelVarles.params])),
+				url=execlN.case_prev(pre)[ExcelVarles.caseUrl],
+				json = r_params(json.loads(execlN.case_prev(pre)[ExcelVarles.params])),
 				headers = header)
-			if excel.case_prev(pre)[ExcelVarles.caseName] == '检查是否已发起聊天' and r_pre.json()['data'] != '':
+			if execlN.case_prev(pre)[ExcelVarles.caseName] == '检查是否已发起聊天' and r_pre.json()['data'] != '':
 				basics.update({"roomId":r_pre.json()['data']['records'][0]['roomId']})
-			elif excel.case_prev(pre)[ExcelVarles.caseName] == '创建聊天房间' and r_pre.json()['code'] == 200:
+			elif execlN.case_prev(pre)[ExcelVarles.caseName] == '创建聊天房间' and r_pre.json()['code'] == 200:
 				basics.update({"roomId": r_pre.json()['data']['roomId'],"extension": r_pre.json()['data']['deliverId']})
-			elif excel.case_prev(pre)[ExcelVarles.caseName] == '检查是否有未接收的投递' and r_pre.json()['message'] == '请等待HR接收！':
+			elif execlN.case_prev(pre)[ExcelVarles.caseName] == '检查是否有未接收的投递' and r_pre.json()['message'] == '请等待HR接收！':
 				pytest.exit('存在未接受简历,结束执行',returncode=1)
-			elif excel.case_prev(pre)[ExcelVarles.caseName] == '投递简历' and r_pre.json()['code'] == 200:
+			elif execlN.case_prev(pre)[ExcelVarles.caseName] == '投递简历' and r_pre.json()['code'] == 200:
 				basics.update({"extension": r_pre.json()['data'],"sendId": basics["userId"],"receiveId": basics["hrId"],"sendTime": "2023-02-09 15:44:00"})
 		except Exception as e:
 			print(str(datas[ExcelVarles.caseName]) + str(e))

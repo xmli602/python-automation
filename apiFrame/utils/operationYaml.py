@@ -17,13 +17,16 @@ class OperationYaml:
 		with open(filePath(fileDir=fileDir,fileName=fileName),'r',encoding='gbk') as f:
 			return yaml.load(f,Loader=yaml.FullLoader)
 
-if __name__ == '__main__':
-    obj = OperationYaml()
-    items = obj.readYaml()
-    print(items[1]['url'],type(items))
-    # print(items['account_001']['telephone'])
-    # print(type(items[1]['data']))
-#     items = obj.dictYaml()
-#readYaml()[2]['url']
+# 实例化
+yaml_example = OperationYaml()
+
+# if __name__ == '__main__':
+# 	yame = OperationYaml()
+# 	item = yame.readYaml()
+# 	print(item[0])
+#     # print(items['account_001']['telephone'])
+#     # print(type(items[1]['data']))
+# #     items = obj.dictYaml()
+# #readYaml()[2]['url']
 
 

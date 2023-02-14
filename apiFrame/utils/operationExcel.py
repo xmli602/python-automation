@@ -102,7 +102,10 @@ class OperartionExcel(OperationYaml):
 		'''获取case的响应码'''
 		return self.getValue(row=row,col=ExcelVarles().v_headers())
 
-if __name__ == '__main__':
-    obj = OperartionExcel()
-    print(obj.get_headers(1))
+
+# 实例化
+excel = OperartionExcel()
+# if __name__ == '__main__':
+#     obj = OperartionExcel()
+#     print(obj.get_headers(1))
 

@@ -1,8 +1,1 @@
-2023-02-09 10:23:38,719 | test_aa.py[line:54] | ERROR: WriteExcel Error：'tuple' object has no attribute 'value'
-2023-02-09 10:27:12,510 | test_aa.py[line:54] | ERROR: WriteExcel Error：[Errno 13] Permission denied: 'F:\\自动化学习\\apiFrame\\data\\deliver.xlsx'
-2023-02-09 10:28:41,996 | test_aa.py[line:52] | INFO: 成功在F:\自动化学习\apiFrame\data\deliver.xlsx表的Sheet1页A7单元格写入数据内容为：lxm
-2023-02-09 16:50:59,030 | test_aa.py[line:52] | INFO: 成功在F:\自动化学习\apiFrame\data\deliver.xlsx表的Sheet1页A7单元格写入数据内容为：lxm
-2023-02-09 16:51:14,487 | test_aa.py[line:54] | ERROR: WriteExcel Error：[Errno 13] Permission denied: 'F:\\自动化学习\\apiFrame\\data\\deliver.xlsx'
-2023-02-09 16:51:44,700 | test_aa.py[line:54] | ERROR: WriteExcel Error：[Errno 13] Permission denied: 'F:\\自动化学习\\apiFrame\\data\\deliver.xlsx'
-2023-02-09 16:51:51,113 | test_aa.py[line:52] | INFO: 成功在F:\自动化学习\apiFrame\data\deliver.xlsx表的Sheet1页A8单元格写入数据内容为：lxm
-2023-02-09 16:52:15,442 | test_aa.py[line:52] | INFO: 成功在F:\自动化学习\apiFrame\data\delivertest.xlsx表的Sheet1页A8单元格写入数据内容为：lxm
+2023-02-13 10:56:25,366 | test_aa.py[line:52] | INFO: 成功在F:\自动化学习\apiFrame\data\delivertest.xlsx表的Sheet1页A8单元格写入数据内容为：lxm

@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ec80aac-5957-42c0-a139-491332da0138" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apiFrame/data/delivertest.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/data/delivertest.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_P.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_P.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apiFrame/tests/test_deliver_new.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apiFrame/utils/operationYaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/utils/operationYaml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apiFrame/utils/opreationExcelN.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apiFrame/utils/opreationExcelN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -304,7 +297,8 @@
       <workItem from="1675910979106" duration="4545000" />
       <workItem from="1675926096823" duration="1051000" />
       <workItem from="1675927172889" duration="1238000" />
-      <workItem from="1675991762038" duration="3416000" />
+      <workItem from="1675991762038" duration="3888000" />
+      <workItem from="1676251596332" duration="35000" />
     </task>
     <servers />
   </component>
