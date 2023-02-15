@@ -44,6 +44,31 @@ def cursorCre(connSQL):
 	return cursor
 
 @pytest.fixture()
+def define_sql(sql):
+	'''
+	定义sql语句
+	:param sql:
+	:return:
+	'''
+	return sql
+
+
+@pytest.fixture()
+def sql_execute(connSQL,cursorCre,define_sql):
+	'''
+	执行sql，并捕获执行结果
+	:param connSQL: 数据库链接
+	:param cursorCre: 数据库游标
+	:param sql: 需要执行的sql语句
+	:return:
+	'''
+	cursorCre.execute(define_sql)
+	result_sql = cursorCre.fetchall()
+	return result_sql
+
+
+
+@pytest.fixture()
 def job_data(connSQL,cursorCre):
 	'''获取投递基础数据,岗位id,企业id,hrid,userid,简历id'''
 	basics = {}

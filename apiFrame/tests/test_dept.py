@@ -21,7 +21,7 @@ def init(connSQL,cursorCre):
 
 
 @pytest.mark.parametrize('datas',execlN.runs())
-def test_dept(init,datas,getToken,connSQL,cursorCre):
+def test_dept(init,datas,getToken,connSQL,cursorCre,sql_execute,define_sql):
 	'''
 
 	:param datas: 所有可执行的测试用例
@@ -57,11 +57,25 @@ def test_dept(init,datas,getToken,connSQL,cursorCre):
 	case.other_dept = '1472418994337308672'
 	r = obj.post(url=datas[ExcelVarles.caseUrl], json=eval(case.replace_data(str(params))), headers=header)
 	case_assert_result(r)
-	if datas[ExcelVarles.caseName] == '新增一级部门':
-		sql_getid = " SELECT id from admin_dept where name = 'Auto一级0213' "
-		cursorCre.execute(sql_getid)
-		first_order_id = cursorCre.fetchall()
-		case.D_id_l1 = str(first_order_id[0]['id'])
+	if datas[ExcelVarles.sql_if] == 'y':
+		if datas[ExcelVarles.caseName] == '新增一级部门':
+			sql_getid = define_sql(sql = "SELECT id from admin_dept where name = {0}".format(case.name_l1))
+			D_id_l1 = str(sql_execute(sql_getid)[0]['id'])
+			print(D_id_l1,type(D_id_l1))
+		elif datas[ExcelVarles.caseName] == '新增二级部门':
+			sql_getid =  define_sql(sql = "SELECT id from admin_dept where name = {0}".format(case.name_l2))
+			D_id_l2 = str(sql_execute(sql_getid)[0]['id'])
+			print(D_id_l2,type(D_id_l2))
+
+
+
+# 	first_order_id = cursorCre.fetchall()
+# 	case.D_id_l1 = str(first_order_id[0]['id'])
+	# if datas[ExcelVarles.caseName] == '新增一级部门':
+	# 	sql_getid = " SELECT id from admin_dept where name = 'Auto一级0213' "
+	# 	cursorCre.execute(sql_getid)
+	# 	first_order_id = cursorCre.fetchall()
+	# 	case.D_id_l1 = str(first_order_id[0]['id'])
 
 		# if pre != '':
 		# 	r_pre = obj.post(

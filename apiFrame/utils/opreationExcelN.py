@@ -21,6 +21,7 @@ class ExcelVarles:
 	isRun = '是否执行'
 	headers = '请求头'
 	status_code = '状态码'
+	sql_if = '是否执行数据库'
 	post_params = '后置参数'
 
 
@@ -149,7 +150,8 @@ class OperationExcelN():
 
 execlN = OperationExcelN()
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
+	print(execlN.cases_list())
 # 	print(execlN.get_data(),type(execlN.get_data()))
     # obj = OperationExcelN()
     # print(obj.write_casePre(casePre='dsdsds',casename='投递简历'))

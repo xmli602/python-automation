@@ -21,5 +21,8 @@ class APICase:
 case = APICase()
 # case.name = '李晓曼'
 # # a = {"name":"#name#","gender":"#gender#","parentId":"0","status":1}
+case.D_id = str(1439791207755497479)
+a = "http://192.168.18.167:201/backend/system/dept/deleteDept?id=#D_id#"
 # parame = {"name":"#name#","parentId":"1439791207755497479","siteCode":"500100"}
 # print(case.replace_data(str(parame)),type(eval(case.replace_data(str(parame)))))
+print(case.replace_data(a))
